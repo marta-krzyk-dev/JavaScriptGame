@@ -14,6 +14,7 @@ var maxLevel = 3;
 var level = localStorage.getItem('level');
 if (level == null || level > maxLevel) {
     localStorage.setItem('level', 1);
+    level = 1;
 }
 console.log("Level: " + level);
 buttonLevel.innerText = "Level " + level;
