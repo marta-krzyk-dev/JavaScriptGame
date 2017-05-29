@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Simple JavaScript Game</title>
+
+    <!--link rel="icon" href="favicon.ico"/-->
+
+      <style type="text/css">
+
+        * { padding: 0; margin: 0; }
+
+        canvas { background: #eee; display: block; margin: 10px auto; border: 5px solid #B6DFD7 }
+
+        button {
+        vertical-align: middle;
+        padding:5px;
+        margin: auto;
+        margin-right: 10px;
+        border:1px solid #9999FF;
+        }
+
+        a {
+        padding: 0px;
+        }
+        div {
+        margin-left:45%;
+        }
+
+        .centered tr td
+        {text-align:center}
+
+        body {
+        background-image: url("background.jpg");
+        background-color: #cccccc;
+        background-size:  30%;
+        }
+
+        aside {
+        font-family: Arial;
+        background-color: white;
+        background:rgba(255,255,255,0.5);
+        margin-left: 10%;
+        margin-right:10%;
+        padding: 10px;
+        text-wrap: normal;
+        }
+      </style>
+
+    </head>
+  
+<body>
+
+  <canvas id="myCanvas" width="480" height="320"></canvas>
+  <div><button  type="button" id="buttonNewGame" onclick="newGameButtonHandler()">New game</button>
+  <button type="button" id="buttonNextLevel" onclick="nextLevelButtonHandler()">Level 1</button></div>
+  <canvas id="imageCanvas" width="480" height="320"></canvas>
+
+  <script type='text/javascript' src='game_code.js'></script>
+
+</body>
+</html>
